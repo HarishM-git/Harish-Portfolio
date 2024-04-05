@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&family=Tac+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Tac+One&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Tac+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+
+h1.name{
+  color: #b2b2b2;;
+
+  font-size: 27px ;
+  padding-left: 80px;
+  padding-right: 155px;
+  
+
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  position: fixed;
+  top: 5px;
+   
+
+  
+  
+}
+
+.header{
+  display:flex; 
+  height: 55px;
+  flex-direction: row;
+  
+  position: fixed;
+  top: 0px;
+  left: 580px;
+  right: 0px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  z-index: 133;
+
+  border-bottom-left-radius: 18px;
+  padding-left: 44px;
+  backdrop-filter: blur(8px);
+  
+
+}
+
+
+
+
+.middle-section{
+  display: flex;
+  flex-direction: row;
+  
+  width: 555px;
+  
+  gap: 86px;
+}
+.last-section{
+  display: flex;
+  
+  width: 380px;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 70px;
+  
+}
+
+
+
+.contact-me{
+  padding-left: 0px;
+}
+.resume{
+  background-color: #01d8c3;
+  border-radius: 5px;
+  margin-top: 9px; 
+ 
+}
+.view-resume{
+  
+  color: black;
+  padding-inline: 18px;
+ 
+  margin-top: 12px  ;
+  
+ 
+
+}

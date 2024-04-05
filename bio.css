@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+.bio-text{
+  background-color: #131313;
+  margin-top: 30px;
+  height: max-content;
+}
+.bio-image-con{
+  display: flex;
+  justify-content: center;    
+  width: 770px;
+  height: 550px;
+  padding-top: 90px;
+}
+
+.bio-image img{
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  
+}
+
+.text-for-bio{
+ 
+  width: 770px;
+  height: 550px;
+}
+
+.bio-con{
+  display: flex;
+  flex-direction: row;
+  height: 1000px;
+  
+}
+
+.original-text-for-bio{
+  margin-top: 90px;
+  margin-right: 35px;
+  line-height: 35px;  
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  }
+  
+.resume-bio{
+  background-color: #01d8c3;
+  width: 140px;
+  padding-left: 15px;
+  height: 40px;
+  border-radius: 5px;
+}  
+.view-resume-bio{
+  color:black;
+  padding-top:9px;
+
+}

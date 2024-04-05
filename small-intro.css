@@ -1,0 +1,32 @@
+.name-intro,b{
+  color: #01d8c3;
+}
+.small-intro{
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; 
+ 
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.facebook-icon{
+  padding: 20px;
+}
+.linkedin-icon{
+  padding: 20px;
+}
+.github-icon{
+  padding: 20px;
+}
+.gmail-icon{
+  padding: 20px;
+}
