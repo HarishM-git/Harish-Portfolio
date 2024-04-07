@@ -1,16 +1,15 @@
 .feature-pro-text{
   height: max-content;
-  
-
+  padding-top: 45px;
 }
 .feature-pro-container{
   
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
-  margin-top: 50px;
+  
+  margin-top: 70px;
   flex-wrap: wrap;
-
+  gap:115px;
 }
 .rps-game-con{
   margin-left: 50px;
