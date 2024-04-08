@@ -9,14 +9,27 @@ const services=[{
   name:'Video and photo editor',
   content:'Crafting compelling stories through precise video editing, each scene woven seamlessly into a captivating narrative.'
 }]
-let html=''
 services.forEach(element => {
-html+=`<div class="web-developer video-editor">
-    <div class="service-icon"><i style="color: black;"class="fa-solid fa-video"></i></div>
-    <div class="title-name"><h4><u>${element.name}</u></h4></div>
-    <div class="service-content"><h6>${element.content}</h6></div>
-  </div>
-</div>`
+  const divElem = document.createElement('div')
+  divElem.className = 'web-developer video-editor'
+  const serdivElem = document.createElement('div')
+  serdivElem.className = 'service-icon'
+  const Icon = document.createElement('i')
+  Icon.className = 'fa-solid fa-video'
+  Icon.style = 'color: black'
+  const titleDiv=document.createElement('div')
+  titleDiv.className='title-name'
+  const serviceCon=document.createElement('div')
+  serviceCon.className='service-content'
+  const h4 = document.createElement('h4')
+  h4.innerText = element.name
+  const h6 = document.createElement('h6')
+  h6.innerText = element.content
+  titleDiv.append(h4)
+  serviceCon.append(h6)
+  serdivElem.append(Icon)
+  divElem.append(serdivElem)
+  divElem.append(titleDiv)
+  divElem.append(serviceCon)
+  document.querySelector('.service-js').appendChild(divElem)
 });
-console.log(html);
-document.querySelector('.service-js').innerHTML=html;
