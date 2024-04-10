@@ -1,44 +1,60 @@
 const services=[{
-  icon:'<i class="fa-solid fa-code"></i>',
+  icon:'fa fa-code',
   name:'Web Developer',
   content:'Seamlessly merging creativity with code to sculpt engaging user interfaces, using HTML, CSS, and JavaScript as the artist\'s palette.'
 },{
-  icon:'<i class="fa-solid fa-brain"></i>',
+  icon:'fa fa-brain',
   name:'UI Designer',
   content:'Crafting digital realms where creativity meets functionality, sculpting interfaces that dance with user intuition and delight.'
 },
 {
-  icon:'<i class="fa-solid fa-video"></i>',
+  icon:'fa fa-video',
   name:'Video and photo editor',
   content:'Crafting compelling stories through precise video editing, each scene woven seamlessly into a captivating narrative.'
 }]
 
-const projects=[{
-  image:'',
-  text:''
-},{
-  image:'',
-  text:'',
-
-},{
-  image:'',
-  text:''
-}]
-
-
-
-
-
-
-
-let html_service=''
+let html=''
 services.forEach(element => {
-html+=`<div class="web-developer video-editor">
-    <div class="service-icon"><i style="color: black;"class="fa-solid fa-video"></i></div>
-    <div class="title-name"><h4><u>${element.name}</u></h4></div>
-    <div class="service-content"><h6>${element.content}</h6></div>
-  </div>
-</div>`
+  const divElem = document.createElement('div')
+  divElem.className = 'web-developer video-editor'
+  const serdivElem = document.createElement('div')
+  serdivElem.className = 'service-icon'
+  const Icon = document.createElement('i')
+  Icon.className = element.icon
+  Icon.style = 'color: white'
+  const titleDiv=document.createElement('div')
+  titleDiv.className='title-name'
+  const Hr=document.createElement('hr')
+  const serviceCon=document.createElement('div')
+  serviceCon.className='service-content'
+  const h4 = document.createElement('h4')
+  h4.innerText = element.name
+  const h6 = document.createElement('h6')
+  h6.innerText = element.content
+  serdivElem.append(Icon)
+  divElem.append(serdivElem)
+  titleDiv.append(h4)
+  divElem.append(titleDiv)
+  divElem.append(Hr)
+  serviceCon.append(h6)
+  divElem.append(serviceCon)
+  document.querySelector('.service-js').appendChild(divElem)
+
 });
-console.log(html);
-document.querySelector('.service-js').innerHTML=html;
+
+
+var outerContainers = document.querySelectorAll('.web-developer');
+
+outerContainers.forEach(function(container) {
+  container.addEventListener('mouseover', function() {
+    var innerContainer = container.querySelector('.service-icon');
+    var icon = innerContainer.querySelector('.fa');
+    icon.style.color = 'Black';
+  });
+
+  container.addEventListener('mouseout', function() {
+    var innerContainer = container.querySelector('.service-icon');
+    var icon = innerContainer.querySelector('.fa');
+    icon.style.color = '#01d8c3'; 
+  });
+});
