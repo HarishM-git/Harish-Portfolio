@@ -33,13 +33,12 @@ const projects=[{
 
 let html_service=''
 services.forEach(element => {
-html_service+=`<div class="web-developer video-editor">
-    <div class="service-icon">${element.icon}</div>
-    <div class="title-name"><h4>${element.name}</h4></div>
-    <hr>
+html+=`<div class="web-developer video-editor">
+    <div class="service-icon"><i style="color: black;"class="fa-solid fa-video"></i></div>
+    <div class="title-name"><h4><u>${element.name}</u></h4></div>
     <div class="service-content"><h6>${element.content}</h6></div>
   </div>
 </div>`
 });
-
-document.querySelector('.service-js').innerHTML=html_service;
+console.log(html);
+document.querySelector('.service-js').innerHTML=html;

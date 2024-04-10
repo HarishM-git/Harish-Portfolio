@@ -55,18 +55,26 @@ h1.name{
 .middle-section{
   display: flex;
   flex-direction: row;
-  
-  width: 555px;
+  padding-top: 6px;
+
   
   gap: 86px;
 }
 .last-section{
-  display: flex;
   
-  width: 380px;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 70px;
+
+
+
+  
+  position: fixed;
+  top: 12px;
+  right: 25px;
+   
+
+  
+  
+
+  
   
 }
 
@@ -85,6 +93,7 @@ h1.name{
   
   color: black;
   padding-inline: 18px;
+  padding-block: 9px;
  
   margin-top: 12px  ;
   
