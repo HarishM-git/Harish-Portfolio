@@ -14,16 +14,13 @@ h1.name{
   color: #b2b2b2;;
 
   font-size: 27px ;
-  padding-left: 80px;
-  padding-right: 155px;
+ 
   
 
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
-  position: fixed;
-  top: 5px;
-  left: -48px;
+ 
 
   
   
@@ -41,12 +38,12 @@ h1.name{
   padding-top: 8px;
   padding-bottom: 10px;
   z-index: 13;
-  justify-content: center;
+  justify-content: space-between;
   border-bottom-left-radius: 18px;
-  padding-left: 44px;
+
   backdrop-filter: blur(8px);
   
-
+  padding-inline: 22px;
 }
 
 
@@ -64,12 +61,8 @@ h1.name{
   
 
 
+    z-index: 13;
 
-  
-  position: fixed;
-  top: 12px;
-  right: 25px;
-  z-index:10 ;
 
   
   
@@ -83,21 +76,17 @@ h1.name{
 .contact-me{
   padding-left: 0px;
 }
-.resume{
-  background-color: #01d8c3;
-  border-radius: 5px;
-  margin-top: 9px; 
- 
-}
+
 .view-resume{
   
-  color: black;
+  color:#000000;
   padding-inline: 18px;
   padding-block: 9px;
- 
-  margin-top: 12px  ;
   
+  background-color: #01d8c3;
  
+  border-radius: 8px;
+  margin-block: 16px;
 
 }
 
@@ -113,4 +102,27 @@ h1.name{
 /* Add your CSS styles here */
 header a.active {
   color:#01d8c3; /* Change the color as needed */
+}
+
+
+@media (max-width:1040px){
+  .middle-section{
+    gap:35px
+  }
+}
+
+@media (max-width:900px){
+  .middle-section{
+    display: none;
+  }
+}
+
+@media (max-width:490px){
+  .small-intro{
+    margin: auto;
+    width: 70%;
+
+    
+    
+  }
 }

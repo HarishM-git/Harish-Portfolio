@@ -1,7 +1,8 @@
 .service-text{
  
-  height:400px;
+  height:max-content;
   background-color: #131313;
+  padding-bottom: 40px;
 }
 .center{
   padding-top: 20px;
@@ -95,4 +96,18 @@ hr{
 
 .service-content:hover .fa{
   color: black;
+}
+
+
+
+
+@media (max-width:1040px){
+  .service-container{
+    gap: 55px;
+  }
+}
+@media (max-width:490px){
+  .service-container{
+    gap: 35px;
+  }
 }
