@@ -23,7 +23,7 @@ h1.name{
   font-style: normal;
   position: fixed;
   top: 5px;
-   
+  left: -48px;
 
   
   
@@ -36,12 +36,12 @@ h1.name{
   
   position: fixed;
   top: 0px;
-  left: 580px;
+  left: 0px;
   right: 0px;
   padding-top: 8px;
   padding-bottom: 10px;
-  z-index: 133;
-
+  z-index: 13;
+  justify-content: center;
   border-bottom-left-radius: 18px;
   padding-left: 44px;
   backdrop-filter: blur(8px);
