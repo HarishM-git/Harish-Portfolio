@@ -42,7 +42,9 @@
 
 .web-developer:hover .service-icon,
 .web-developer:hover .title-name,
-.web-developer:hover .service-content
+.web-developer:hover .service-content,
+.web-developer:hover hr
+
 {
     
     
@@ -64,7 +66,6 @@
   
 }
 .service-content{
-  margin-top: ;
   margin-left: 22px;
   margin-right: 12px;
   color: #d0d0d0;
@@ -84,11 +85,12 @@
 }
 
 hr{
+  
   width: 25%;
   margin-left: 22px;
   margin-bottom: -18px;
   margin-top: -11px;
-  color: #b2b2b2;
+  color: white;
 }
 
 .service-content:hover .fa{

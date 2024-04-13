@@ -58,3 +58,37 @@ outerContainers.forEach(function(container) {
     icon.style.color = '#01d8c3'; 
   });
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const headerLinks = document.querySelectorAll('header a');
+
+  function setActiveLink() {
+      headerLinks.forEach(link => {
+          const sectionId = link.getAttribute('href').substring(1);
+          const section = document.getElementById(sectionId);
+          
+          if (isElementInViewport(section)) {
+              headerLinks.forEach(headerLink => headerLink.classList.remove('active'));
+              link.classList.add('active');
+          }
+      });
+  }
+
+  setActiveLink();
+
+  window.addEventListener('scroll', setActiveLink);
+
+  function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+  }
+});
