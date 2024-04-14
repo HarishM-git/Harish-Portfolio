@@ -117,7 +117,7 @@ header a.active {
   }
 }
 
-@media (max-width:490px){
+@media (max-width:520px){
   .small-intro{
     margin: auto;
     width: 70%;
