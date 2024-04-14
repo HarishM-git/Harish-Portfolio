@@ -125,4 +125,10 @@ header a.active {
     
     
   }
+  .last-section{
+    display: none;
+  }
+  .header{
+    justify-content: center;
+  }
 }
