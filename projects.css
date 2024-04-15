@@ -62,3 +62,28 @@
   border-radius: 15px;
   margin-top: 22px;
 }
+
+
+@media(min-width:521px) {
+  .common-model{
+    
+    width: 400px;
+    height: 400px;
+    
+}
+}
+
+@media(min-width:0px) and (max-width:520px){
+ 
+  .common-model{
+    width: 360px;
+    height: 420px;
+  }
+  .style-container img{
+    width: 90%;
+    padding-inline: 18px;
+    border-radius: 20px;
+    border-radius: 20px;
+  }
+}
+
