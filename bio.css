@@ -2,7 +2,7 @@
 
 
 .bio-text{
-  background-color: #131313;
+  
   margin-top: 30px;
   height: max-content;
 }
@@ -57,4 +57,51 @@
   color:black;
   padding-top:9px;
 
+}
+
+
+
+
+
+@media (max-width:1100px){
+  .bio-con{
+    flex-direction: column;
+    
+  }
+  .bio-image-con{
+    width: 100%;
+
+  }
+  .text-for-bio{
+    margin: auto;
+    width: 85%;
+  }
+  .resume-bio{
+    display: none;
+  }
+}
+
+@media(min-width:800px) and (max-width:1099px){
+  .bio-image img{
+    width: 250px;
+    height: 250px;
+  }
+
+}
+@media(min-width:400px) and (max-width:799px){
+  .bio-image img{
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+@media (max-width:399px){
+  
+  .bio-image img{
+    width:150px;
+    height: 150px;
+
+  }
+  
 }
