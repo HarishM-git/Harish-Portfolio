@@ -46,7 +46,9 @@ h1.name{
   padding-inline: 22px;
 }
 
-
+a:active{
+  background-color: #01d8c3;
+}
 
 
 .middle-section{

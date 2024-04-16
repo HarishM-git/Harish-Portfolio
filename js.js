@@ -91,6 +91,49 @@ Projects.forEach((element)=>{
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const headerLinks = document.querySelectorAll('header a');
+
+  function setActiveLink() {
+      headerLinks.forEach(link => {
+          // Check if link is not null
+          if (link !== null) {
+              const href = link.getAttribute('href');
+              if (href) {
+                  const sectionId = href.substring(1);
+                  const section = document.getElementById(sectionId);
+
+                  // Only proceed if section is found
+                  if (section && isElementInViewport(section)) {
+                      // Remove 'active' class from all links
+                      headerLinks.forEach(headerLink => headerLink.classList.remove('active'));
+                      // Add 'active' class to the current link
+                      link.classList.add('active');
+                  }
+              }
+          }
+      });
+  }
+
+  setActiveLink();
+
+  window.addEventListener('scroll', setActiveLink);
+
+  // Check if an element is in the viewport
+  function isElementInViewport(el) {
+      if (el === null) {
+          return false;
+      }
+      const rect = el.getBoundingClientRect();
+      return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+  }
+});
+
 
 
 
@@ -160,32 +203,3 @@ outerContainers.forEach(function(container) {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const headerLinks = document.querySelectorAll('header a');
-
-  function setActiveLink() {
-      headerLinks.forEach(link => {
-          const sectionId = link.getAttribute('href').substring(1);
-          const section = document.getElementById(sectionId);
-          
-          if (isElementInViewport(section)) {
-              headerLinks.forEach(headerLink => headerLink.classList.remove('active'));
-              link.classList.add('active');
-          }
-      });
-  }
-
-  setActiveLink();
-
-  window.addEventListener('scroll', setActiveLink);
-
-  function isElementInViewport(el) {
-      const rect = el.getBoundingClientRect();
-      return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-  }
-});
