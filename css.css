@@ -22,8 +22,9 @@
   height: 100%; /* Fill the sun element */
   border-radius: 50%; /* Make it circular */
   border: 2px;
-  border-style:dotted;
+  border-style:groove;
   border-color: aqua;
+  opacity: 0.8;
 }
 
 .orbit-image {
