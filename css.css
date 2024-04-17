@@ -1,0 +1,92 @@
+.container {
+  position: relative;
+  width: 200px; /* Compact width of the container */
+  height: 200px; /* Compact height of the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.sun {
+  position: absolute;
+  width: 150px; /* Diameter of the sun */
+  height: 150px;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the sun */
+  z-index: 15;
+
+}
+
+.sun img {
+  width: 100%; /* Fill the sun element */
+  height: 100%; /* Fill the sun element */
+  border-radius: 50%; /* Make it circular */
+}
+
+.orbit-image {
+  position: absolute;
+  width: 30px; /* Diameter of the orbiting images */
+  height: 30px;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+}
+
+.orbit-image img {
+  width: 100%; /* Fill the orbiting image element */
+  height: 100%; /* Fill the orbiting image element */
+  border-radius: 50%; /* Make it circular */
+}
+
+/* Orbit animations */
+.orbit1 {
+  animation: rotate1 10s linear infinite;
+}
+
+.orbit2 {
+  animation: rotate2 15s linear infinite;
+}
+
+.orbit3 {
+  animation: rotate3 20s linear infinite;
+}
+.orbit4 {
+  animation: rotate3 25s linear infinite;
+}
+
+/* Keyframes for each orbit */
+@keyframes rotate1 {
+  0% {
+      transform: rotate(0deg) translate(90px, 0); /* Orbit radius of 60px */
+  }
+  100% {
+      transform: rotate(360deg) translate(90px, 0); /* Full 360-degree rotation */
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+      transform: rotate(0deg) translate(110px, 0); /* Orbit radius of 90px */
+  }
+  100% {
+      transform: rotate(360deg) translate(110px, 0); /* Full 360-degree rotation */
+  }
+}
+
+@keyframes rotate3 {
+  0% {
+      transform: rotate(0deg) translate(120px, 0); /* Orbit radius of 120px */
+  }
+  100% {
+      transform: rotate(360deg) translate(120px, 0); /* Full 360-degree rotation */
+  }
+}
+
+
+@keyframes rotate4 {
+  0% {
+      transform: rotate(0deg) translate(160px, 0); /* Orbit radius of 120px */
+  }
+  100% {
+      transform: rotate(360deg) translate(160px, 0); /* Full 360-degree rotation */
+  }
+}
+

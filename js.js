@@ -58,6 +58,11 @@ const Projects=[{
   img:"project-photos/youtube.png",
   href:"https://harishm-git.github.io/you-tube/" ,
   content:"This is an Youtube Clone for Html and Css Practice"
+},
+{
+  img:"project-photos/amazon.png",
+  href:"https://harishm-git.github.io/amazon-project/" ,
+  content:"This is an Amazon Clone for Html and Css Practice"
 }]
 
 
