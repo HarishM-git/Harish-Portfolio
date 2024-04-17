@@ -30,12 +30,12 @@
   border-style: solid;
   cursor: pointer;
   
-  transition:opacity 0.3 0.6 ease;
+  transition: transform 0.3s ease-in-out;
 }
 .common-model:hover{
 
   
-  
+  transform: scale(1.09);
   border-color: #01d8c3;
 
   opacity:1;
