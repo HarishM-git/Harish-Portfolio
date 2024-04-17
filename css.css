@@ -13,6 +13,7 @@
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Center the sun */
   z-index: 15;
+  
 
 }
 
@@ -20,6 +21,9 @@
   width: 100%; /* Fill the sun element */
   height: 100%; /* Fill the sun element */
   border-radius: 50%; /* Make it circular */
+  border: 3px;
+  border-style: solid;
+  border-color: aqua;
 }
 
 .orbit-image {
