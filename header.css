@@ -56,20 +56,12 @@ a:active{
   flex-direction: row;
   padding-top: 6px;
 
-  
+  font-size: 15px;
   gap: 86px;
 }
 .last-section{
   
-
-
-    z-index: 13;
-
-
-  
-  
-
-  
+    z-index: 13;  
   
 }
 

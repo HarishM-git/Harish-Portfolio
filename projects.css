@@ -79,6 +79,10 @@
   .common-model{
     width: 360px;
     height: 420px;
+    
+  }
+  .common-model:hover{
+    transform: scale(0.95);
   }
   .style-container img{
     width: 90%;
