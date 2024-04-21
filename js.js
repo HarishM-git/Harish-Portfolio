@@ -108,11 +108,8 @@ document.addEventListener('DOMContentLoaded', function() {
                   const sectionId = href.substring(1);
                   const section = document.getElementById(sectionId);
 
-                  // Only proceed if section is found
                   if (section && isElementInViewport(section)) {
-                      // Remove 'active' class from all links
                       headerLinks.forEach(headerLink => headerLink.classList.remove('active'));
-                      // Add 'active' class to the current link
                       link.classList.add('active');
                   }
               }
@@ -122,9 +119,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   setActiveLink();
 
-  window.addEventListener('scroll', setActiveLink);
+  window.addEventListener('scroll', 
+  setActiveLink);
 
-  // Check if an element is in the viewport
   function isElementInViewport(el) {
       if (el === null) {
           return false;
