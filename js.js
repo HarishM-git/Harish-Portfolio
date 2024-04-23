@@ -95,37 +95,28 @@ Projects.forEach((element)=>{
 })
 
 
-
 document.addEventListener('DOMContentLoaded', function() {
-  const headerLinks = document.querySelectorAll('header a');
+  const navLinks = document.querySelectorAll('header a');
 
   function setActiveLink() {
-      headerLinks.forEach(link => {
-          // Check if link is not null
-          if (link !== null) {
-              const href = link.getAttribute('href');
-              if (href) {
-                  const sectionId = href.substring(1);
-                  const section = document.getElementById(sectionId);
-
-                  if (section && isElementInViewport(section)) {
-                      headerLinks.forEach(headerLink => headerLink.classList.remove('active'));
-                      link.classList.add('active');
-                  }
-              }
+      navLinks.forEach(link => {
+          const sectionId = link.getAttribute('href').substring(1);
+          const section = document.getElementById(sectionId);
+          
+          if (isElementInViewport(section)) {
+              navLinks.forEach(navLink => navLink.classList.remove('active'));
+              link.classList.add('active');
           }
       });
   }
 
   setActiveLink();
 
-  window.addEventListener('scroll', 
-  setActiveLink);
+  window.addEventListener('scroll', setActiveLink);
+  window.addEventListener('resize', setActiveLink); // Add resize event listener
 
   function isElementInViewport(el) {
-      if (el === null) {
-          return false;
-      }
+      if (!el) return false; // Added null check
       const rect = el.getBoundingClientRect();
       return (
           rect.top >= 0 &&
@@ -135,9 +126,6 @@ document.addEventListener('DOMContentLoaded', function() {
       );
   }
 });
-
-
-
 
 
 
