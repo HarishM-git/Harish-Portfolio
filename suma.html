@@ -1,31 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Stack Container</title>
+<style>
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-  <title>Document</title>
+.tech-stack {
+  margin-bottom: 20px;
+}
 
-  
+.tech-stack-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the buttons horizontally */
+}
+
+.tech-stack-button {
+  width: 80px; /* Adjusted width */
+  height: 80px; /* Adjusted height */
+  margin: 5px; /* Reduced margin */
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.tech-stack-button img {
+  max-width: 60px; /* Adjusted max-width */
+  max-height: 60px; /* Adjusted max-height */
+}
+</style>
 </head>
 <body>
- <div class="container">
-    <div class="sun">
-        <img src="profile-photo/react.png" alt="Profile image" />
+
+<div class="container">
+  <div class="tech-stack">
+    <div class="tech-stack-buttons">
+      <div class="tech-stack-button">
+        <img src="html_logo.png" alt="HTML">
+      </div>
+      <div class="tech-stack-button">
+        <img src="css_logo.png" alt="CSS">
+      </div>
+      <div class="tech-stack-button">
+        <img src="javascript_logo.png" alt="JavaScript">
+      </div>
     </div>
-    <div class="orbit-image orbit1">
-        <img src="project-photos/js.jpg" alt="Orbiting Image 1" />
-    </div>
-    <div class="orbit-image orbit2">
-        <img src="project-photos/html.svg" alt="Orbiting Image 2" />
-    </div>
-    <div class="orbit-image orbit3">
-        <img src="project-photos/css-icon.webp" alt="Orbiting Image 3" />
-    </div>
-    <div class="orbit-image orbit4">
-      <img src="project-photos/amazon.png" alt="Orbiting Image 4" />
   </div>
+
+  <div class="tech-stack">
+    <div class="tech-stack-buttons">
+      <div class="tech-stack-button">
+        <img src="nodejs_logo.png" alt="Node.js">
+      </div>
+      <div class="tech-stack-button">
+        <img src="expressjs_logo.png" alt="Express.js">
+      </div>
+      <div class="tech-stack-button">
+        <img src="mongodb_logo.png" alt="MongoDB">
+      </div>
+    </div>
+  </div>
+
+  <!-- Repeat the same structure for Additional Tools and Libraries and Deployment -->
+
 </div>
 
 </body>
