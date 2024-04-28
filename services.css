@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 .service-text{
  
   height:max-content;
@@ -70,6 +72,10 @@
   margin-left: 22px;
   margin-right: 12px;
   color: #d0d0d0;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
 }
 
 .web-developer {

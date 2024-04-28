@@ -81,9 +81,16 @@ a:active{
  
   border-radius: 8px;
   margin-block: 16px;
-
+  transition: transform 0.3s ease-in-out;
 }
 
+.view-resume:hover{
+ 
+  
+  border-color: #01d8c3;
+  
+  transform: scale(1.1);
+}
 
 
 
