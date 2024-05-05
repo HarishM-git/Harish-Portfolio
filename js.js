@@ -201,6 +201,29 @@ outerContainers.forEach(function(container) {
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.tech-stack-button');
+
+  buttons.forEach(button => {
+    button.addEventListener('mouseenter', function() {
+      const icon = this.querySelector('i');
+      icon.style.color = '#01d8c3';
+    });
+
+    button.addEventListener('mouseleave', function() {
+      const icon = this.querySelector('i');
+      icon.style.color = 'white'; // Change back to original color
+    });
+  });
+});
+
+
+
+
+
+
+
+
 
 
 
