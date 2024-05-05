@@ -1,3 +1,7 @@
+
+
+
+
 const services=[{
   icon:'fa fa-code',
   name:'Web Developer',
@@ -94,7 +98,6 @@ Projects.forEach((element)=>{
 
 })
 
-
 document.addEventListener('DOMContentLoaded', function() {
   const navLinks = document.querySelectorAll('header a');
 
@@ -170,9 +173,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
 var outerContainers = document.querySelectorAll('.web-developer');
 
 outerContainers.forEach(function(container) {
@@ -188,6 +188,26 @@ outerContainers.forEach(function(container) {
     icon.style.color = '#01d8c3'; 
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
