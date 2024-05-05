@@ -58,14 +58,20 @@
   padding-left: 15px;
   height: 40px;
   border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
 }  
+
+
 .view-resume-bio{
   color:black;
   padding-top:9px;
+  
 
 }
 
-
+.resume-bio:hover{
+  transform: scale(1.15);
+}
 
 
 
