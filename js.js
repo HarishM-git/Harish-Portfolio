@@ -12,7 +12,7 @@ const services=[{
   content:'Crafting digital realms where creativity meets functionality, sculpting interfaces that dance with user intuition and delight.'
 },
 {
-  icon:'fa fa-video',
+  icon:'fa-solid fa-wand-sparkles fa',
   name:'Video and photo editor',
   content:'Crafting compelling stories through precise video editing, each scene woven seamlessly into a captivating narrative.'
 }]
