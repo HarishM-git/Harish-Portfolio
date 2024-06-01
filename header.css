@@ -56,10 +56,13 @@ h1.name{
   
   padding-top: 6px;
   transform: translateY(50%);
-  transition: transform 3s ;
+  
   font-size: 15px;
   gap: 86px;
   margin-top: -25px;
+}
+.middle-section{
+  transition: transform 3s ;
 }
 
 
