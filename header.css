@@ -105,6 +105,7 @@ h1.name{
 }
 
 .logo{
+  
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -155,17 +156,18 @@ header a.active {
   .small-intro{
     margin: auto;
     width: 70%;
-
-    
-    
+ 
   }
   .last-section{
     display: none;
   }
-  .left-section{
-    margin-left: 41%;
-  }
+  
   .header{
-    height: 70px;
+    height: 60px;
+  }
+  .logo{
+    opacity: 0;
+  transition: opacity 0.5s ease;
+  justify-content: center;
   }
 }

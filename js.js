@@ -1,4 +1,27 @@
-//scroll reveal
+document.addEventListener('DOMContentLoaded', function () {
+  var container = document.querySelector('.header'); // Assuming you have a container for the scroll
+  var logo = document.querySelector('.logo');
+
+  function revealLogo() {
+    if (
+      !logo.classList.contains('revealed') &&
+      container.scrollTop > 0 &&
+      window.innerWidth <= 768 // Adjust this value as needed for your mobile viewport breakpoint
+    ) {
+      logo.classList.add('revealed');
+      setTimeout(function () {
+        logo.style.opacity = '1';
+      }, 100);
+    }
+  }
+
+  container.addEventListener('scroll', revealLogo);
+
+  // Check on initial load only for mobile users
+  if (window.innerWidth <= 768) {
+    revealLogo();
+  }
+});
 
 
 
