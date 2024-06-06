@@ -1,4 +1,4 @@
-
+//scroll reveal
 
 
 
@@ -17,7 +17,7 @@ const services=[{
   content:'Crafting compelling stories through precise video editing, each scene woven seamlessly into a captivating narrative.'
 }]
 
-let html=''
+
 services.forEach(element => {
   const divElem = document.createElement('div')
   divElem.className = 'web-developer video-editor'

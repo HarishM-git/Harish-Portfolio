@@ -1,5 +1,5 @@
 .feature-pro-text{
-  height: max-content;
+  min-height: 100vh;
   padding-top: 45px;
   background-color: #131313;
 }
