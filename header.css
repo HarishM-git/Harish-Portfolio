@@ -162,8 +162,10 @@ header a.active {
   .last-section{
     display: none;
   }
-  .header{
-     display: none;
+  .left-section{
+    margin-left: 41%;
   }
- 
+  .header{
+    height: 70px;
+  }
 }
