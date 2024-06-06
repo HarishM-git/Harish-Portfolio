@@ -163,9 +163,7 @@ header a.active {
     display: none;
   }
   .header{
-    display: none;
+     display: none;
   }
-  .home-text{
-    min-width: 60vh;
-  }
+ 
 }
