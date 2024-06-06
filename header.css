@@ -163,6 +163,9 @@ header a.active {
     display: none;
   }
   .header{
-    justify-content: center;
+    display: none;
+  }
+  .home-text{
+    min-width: 60vh;
   }
 }

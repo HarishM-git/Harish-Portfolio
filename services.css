@@ -5,6 +5,7 @@
   min-height: 50vh;
   background-color: #131313;
   padding-bottom: 40px;
+  overflow-x: hidden;
 }
 .center{
   padding-top: 20px;
