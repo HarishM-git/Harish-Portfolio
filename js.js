@@ -2,53 +2,87 @@
 //scroll effects
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Initialize ScrollReveal
-  const sr = ScrollReveal();
-
-  // ScrollReveal configurations for other sections
-  sr.reveal('.header', { delay: 200, origin: 'top', distance: '100px' });
-  sr.reveal('.home-text', { delay: 350, origin: 'bottom', distance: '50px' });
-  sr.reveal('.github-icon', {
+  ScrollReveal().reveal('.header', { delay: 200, origin: 'top', distance: '100px' });
+  ScrollReveal().reveal('.home-text', { delay: 350, origin: 'bottom', distance: '100px' });
+  
+  ScrollReveal().reveal('.github-icon', {
     origin: 'left',
     distance: '200px',
     duration: 1000,
-    delay: 200,
-    afterReveal: (el) => el.classList.add('icon')
+    delay: 200
   });
-  sr.reveal('.gmail-icon', {
+
+  ScrollReveal().reveal('.gmail-icon', {
     origin: 'bottom',
     distance: '50px',
     duration: 1000,
-    delay: 400,
-    afterReveal: (el) => el.classList.add('icon')
+    delay: 400
   });
-  sr.reveal('.linkedin-icon', {
+
+  ScrollReveal().reveal('.linkedin-icon', {
     origin: 'top',
     distance: '50px',
     duration: 1000,
-    delay: 600,
-    afterReveal: (el) => el.classList.add('icon')
+    delay: 600
   });
-  sr.reveal('.facebook-icon', {
+
+  ScrollReveal().reveal('.facebook-icon', {
     origin: 'right',
     distance: '200px',
     duration: 1000,
-    delay: 200,
-    afterReveal: (el) => el.classList.add('icon')
+    delay: 200
+  });
+  ScrollReveal().reveal('.service-text', { delay: 850, origin: 'right-bottom', distance: '100px' });
+  ScrollReveal().reveal('.web-developer', {
+    origin: 'left',
+    distance: '200px',
+    duration: 1000,
+    delay: 600
   });
 
-  // ScrollReveal configurations for the service section
-  sr.reveal('.service-text', { delay: 700, origin: 'bottom', distance: '100px' });
-  sr.reveal('.service-item', { origin: 'left', distance: '100px', duration: 1000, delay: 400, interval: 200 });
-  
-  sr.reveal('.feature-pro-text', { delay: 850, origin: 'bottom', distance: '100px', duration: 1000 });
-  sr.reveal('.common-model', { origin: 'bottom', distance: '200px', duration: 1000, delay: 600 });
-  sr.reveal('.bio-text', { delay: 900, origin: 'left', distance: '200px', duration: 1000 });
+
+
+
+  ScrollReveal().reveal('.feature-pro-text', { delay: 850, origin: 'bottom', distance: '100px' });
+  ScrollReveal().reveal('.common-model', {
+    origin: 'right-bottom',
+    distance: '200px',
+    duration: 1000,
+    delay: 600
+  });
+  ScrollReveal().reveal('.bio-text', { delay: 900, origin: 'left', distance: '200px' });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const isMobile = window.matchMedia('(max-width: 767px)').matches;
 
+  // Initialize ScrollReveal
+  const sr = ScrollReveal();
 
+  sr.reveal('.header', { delay: 200, origin: 'top', distance: '100px' });
 
+  if (isMobile) {
+    sr.reveal('.home-text', { delay: 350, origin: 'bottom', distance: '50px' });
+    sr.reveal('.github-icon', { origin: 'left', distance: '200px', duration: 1000, delay: 200 });
+    sr.reveal('.gmail-icon', { origin: 'bottom', distance: '50px', duration: 1000, delay: 400 });
+    sr.reveal('.linkedin-icon', { origin: 'top', distance: '50px', duration: 1000, delay: 600 });
+    sr.reveal('.facebook-icon', { origin: 'right', distance: '200px', duration: 1000, delay: 200 });
+    sr.reveal('.service-text', { delay: 700, origin: 'bottom', distance: '100px' });
+    sr.reveal('.service-container', { origin: 'left', distance: '100px', duration: 1000, delay: 400 });
+    sr.reveal('.feature-pro-text', { delay: 850, origin: 'bottom', distance: '100px', duration: 1000 });
+    sr.reveal('.bio-text', { delay: 900, origin: 'bottom', distance: '200px', duration: 1000 });
+  } else {
+    sr.reveal('.home-text', { delay: 350, origin: 'bottom', distance: '100px' });
+    sr.reveal('.github-icon', { origin: 'left', distance: '200px', duration: 1000, delay: 200 });
+    sr.reveal('.gmail-icon', { origin: 'bottom', distance: '50px', duration: 1000, delay: 400 });
+    sr.reveal('.linkedin-icon', { origin: 'top', distance: '50px', duration: 1000, delay: 600 });
+    sr.reveal('.facebook-icon', { origin: 'right', distance: '200px', duration: 1000, delay: 200 });
+    sr.reveal('.service-text', { delay: 700, origin: 'right-bottom', distance: '100px' });
+    sr.reveal('.service-container', { origin: 'left', distance: '100px', duration: 1000, delay: 400 });
+    sr.reveal('.feature-pro-text', { delay: 850, origin: 'right-bottom', distance: '100px', duration: 1000 });
+    sr.reveal('.bio-text', { delay: 900, origin: 'left', distance: '200px', duration: 1000 });
+  }
+});
 
 
 
