@@ -1,4 +1,80 @@
 
+//scroll effects
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize ScrollReveal
+  const sr = ScrollReveal();
+
+  // ScrollReveal configurations for other sections
+  sr.reveal('.header', { delay: 200, origin: 'top', distance: '100px' });
+  sr.reveal('.home-text', { delay: 350, origin: 'bottom', distance: '50px' });
+  sr.reveal('.github-icon', {
+    origin: 'left',
+    distance: '200px',
+    duration: 1000,
+    delay: 200,
+    afterReveal: (el) => el.classList.add('icon')
+  });
+  sr.reveal('.gmail-icon', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    delay: 400,
+    afterReveal: (el) => el.classList.add('icon')
+  });
+  sr.reveal('.linkedin-icon', {
+    origin: 'top',
+    distance: '50px',
+    duration: 1000,
+    delay: 600,
+    afterReveal: (el) => el.classList.add('icon')
+  });
+  sr.reveal('.facebook-icon', {
+    origin: 'right',
+    distance: '200px',
+    duration: 1000,
+    delay: 200,
+    afterReveal: (el) => el.classList.add('icon')
+  });
+
+  // ScrollReveal configurations for the service section
+  sr.reveal('.service-text', { delay: 700, origin: 'bottom', distance: '100px' });
+  sr.reveal('.service-item', { origin: 'left', distance: '100px', duration: 1000, delay: 400, interval: 200 });
+  
+  sr.reveal('.feature-pro-text', { delay: 850, origin: 'bottom', distance: '100px', duration: 1000 });
+  sr.reveal('.common-model', { origin: 'bottom', distance: '200px', duration: 1000, delay: 600 });
+  sr.reveal('.bio-text', { delay: 900, origin: 'left', distance: '200px', duration: 1000 });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -257,57 +333,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-//scroll effects
-
-document.addEventListener('DOMContentLoaded', function() {
-  ScrollReveal().reveal('.header', { delay: 200, origin: 'top', distance: '100px' });
-  ScrollReveal().reveal('.home-text', { delay: 350, origin: 'bottom', distance: '100px' });
-  
-  ScrollReveal().reveal('.github-icon', {
-    origin: 'left',
-    distance: '200px',
-    duration: 1000,
-    delay: 200
-  });
-
-  ScrollReveal().reveal('.gmail-icon', {
-    origin: 'bottom',
-    distance: '50px',
-    duration: 1000,
-    delay: 400
-  });
-
-  ScrollReveal().reveal('.linkedin-icon', {
-    origin: 'top',
-    distance: '50px',
-    duration: 1000,
-    delay: 600
-  });
-
-  ScrollReveal().reveal('.facebook-icon', {
-    origin: 'right',
-    distance: '200px',
-    duration: 1000,
-    delay: 200
-  });
-  ScrollReveal().reveal('.service-text', { delay: 850, origin: 'right-bottom', distance: '100px' });
-  ScrollReveal().reveal('.web-developer', {
-    origin: 'left',
-    distance: '200px',
-    duration: 1000,
-    delay: 600
-  });
-
-
-
-
-  ScrollReveal().reveal('.feature-pro-text', { delay: 850, origin: 'bottom', distance: '100px' });
-  ScrollReveal().reveal('.common-model', {
-    origin: 'right-bottom',
-    distance: '200px',
-    duration: 1000,
-    delay: 600
-  });
-  ScrollReveal().reveal('.bio-text', { delay: 900, origin: 'left', distance: '200px' });
-});
