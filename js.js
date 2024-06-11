@@ -236,3 +236,78 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//scroll effects
+
+document.addEventListener('DOMContentLoaded', function() {
+  ScrollReveal().reveal('.header', { delay: 200, origin: 'top', distance: '100px' });
+  ScrollReveal().reveal('.home-text', { delay: 350, origin: 'bottom', distance: '100px' });
+  
+  ScrollReveal().reveal('.github-icon', {
+    origin: 'left',
+    distance: '200px',
+    duration: 1000,
+    delay: 200
+  });
+
+  ScrollReveal().reveal('.gmail-icon', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    delay: 400
+  });
+
+  ScrollReveal().reveal('.linkedin-icon', {
+    origin: 'top',
+    distance: '50px',
+    duration: 1000,
+    delay: 600
+  });
+
+  ScrollReveal().reveal('.facebook-icon', {
+    origin: 'right',
+    distance: '200px',
+    duration: 1000,
+    delay: 200
+  });
+  ScrollReveal().reveal('.service-text', { delay: 850, origin: 'right-bottom', distance: '100px' });
+  ScrollReveal().reveal('.web-developer', {
+    origin: 'left',
+    distance: '200px',
+    duration: 1000,
+    delay: 600
+  });
+
+
+
+
+  ScrollReveal().reveal('.feature-pro-text', { delay: 850, origin: 'bottom', distance: '100px' });
+  ScrollReveal().reveal('.common-model', {
+    origin: 'right-bottom',
+    distance: '200px',
+    duration: 1000,
+    delay: 600
+  });
+  ScrollReveal().reveal('.bio-text', { delay: 900, origin: 'left', distance: '200px' });
+});
