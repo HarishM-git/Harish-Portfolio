@@ -139,6 +139,7 @@ services.forEach(element => {
   const titleDiv=document.createElement('div')
   titleDiv.className='title-name'
   const Hr=document.createElement('hr')
+  Hr.className='line-l'
   const serviceCon=document.createElement('div')
   serviceCon.className='service-content'
   const h4 = document.createElement('h4')

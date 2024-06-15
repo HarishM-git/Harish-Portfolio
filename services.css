@@ -48,9 +48,7 @@
 
 .web-developer:hover .service-icon,
 .web-developer:hover .title-name,
-.web-developer:hover .service-content,
-.web-developer:hover hr
-
+.web-developer:hover .service-content
 {
     
     
@@ -60,7 +58,10 @@
     color:#131313
   
 }
-
+.web-developer:hover hr{
+    background-color: #131313;
+    border-color: #131313;
+}
 .service-icon{
   margin-top: 35px;
   margin-left: 22px;
@@ -81,7 +82,7 @@
   font-size: 19px;
 }
 
-.web-developer {
+.web-developer{
   
   transition: box-shadow 3s ease-in-out;
   transition: transform 0.3s ease-in-out;
@@ -96,11 +97,12 @@
 
 hr{
   
-  width: 25%;
+  width: 35%;
+  height: 0.5%;
   margin-left: 22px;
   margin-bottom: -18px;
   margin-top: -11px;
-  color: white;
+  background-color: white;
 }
 
 .service-content:hover .fa{
