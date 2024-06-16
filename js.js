@@ -4,7 +4,12 @@
 document.addEventListener('DOMContentLoaded', function() {
   ScrollReveal().reveal('.header', { delay: 200, origin: 'top', distance: '100px' });
   ScrollReveal().reveal('.home-text', { delay: 350, origin: 'bottom', distance: '100px' });
-  
+  ScrollReveal().reveal('.intro-na',{
+    origin:'top',
+    distance:'100px',
+    duration:1000,
+    delay:350
+  })
   ScrollReveal().reveal('.github-icon', {
     origin: 'left',
     distance: '200px',
