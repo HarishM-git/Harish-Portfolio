@@ -89,6 +89,11 @@ document.addEventListener('DOMContentLoaded', function() {
     sr.reveal('.service-container', { origin: 'left', distance: '100px', duration: 1000, delay: 400 });
     sr.reveal('.feature-pro-text', { delay: 850, origin: 'bottom', distance: '100px', duration: 1000 });
     sr.reveal('.bio-text', { delay: 900, origin: 'bottom', distance: '200px', duration: 1000 });
+    
+
+    sr.reveal('.contact-text', { delay: 700, origin: 'bottom', distance: '100px' });
+    sr.reveal('.lft-in-ct', { origin: 'left', distance: '100px', duration: 1000, delay: 400 });
+   
   } else {
     sr.reveal('.home-text', { delay: 350, origin: 'bottom', distance: '100px' });
     sr.reveal('.github-icon', { origin: 'left', distance: '200px', duration: 1000, delay: 200 });
@@ -99,19 +104,12 @@ document.addEventListener('DOMContentLoaded', function() {
     sr.reveal('.service-container', { origin: 'left', distance: '100px', duration: 1000, delay: 400 });
     sr.reveal('.feature-pro-text', { delay: 850, origin: 'right-bottom', distance: '100px', duration: 1000 });
     sr.reveal('.bio-text', { delay: 900, origin: 'left', distance: '200px', duration: 1000 });
-    ScrollReveal().reveal('.contact-text', { delay: 850, origin: 'left', distance: '100px' });
-    ScrollReveal().reveal('.lft-in-ct', {
-      origin: 'left',
-      distance: '200px',
-      duration: 1000,
-      delay: 600
-    });
-    ScrollReveal().reveal('#hire', {
-      origin: 'left',
-      distance: '200px',
-      duration: 1000,
-      delay: 600
-    });
+    ScrollReveal().reveal('.contact-text', { delay: 850, origin: 'bottom', distance: '100px' });
+
+    sr.reveal('.service-text', { delay: 700, origin: 'right-bottom', distance: '100px' });
+    sr.reveal('.service-container', { origin: 'left', distance: '100px', duration: 1000, delay: 400 });
+    sr.reveal('.feature-pro-text', { delay: 850, origin: 'right-bottom', distance: '100px', duration: 1000 });
+
   }
 });
 
