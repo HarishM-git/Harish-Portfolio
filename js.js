@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     delay: 600
   });
   ScrollReveal().reveal('.bio-text', { delay: 900, origin: 'left', distance: '200px' });
+  ScrollReveal().reveal('.contact-text', { delay: 850, origin: 'right-bottom', distance: '100px' });
   ScrollReveal().reveal('.lft-in-ct', {
     origin: 'right-bottom',
     distance: '200px',
