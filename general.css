@@ -4,6 +4,11 @@ html, body {
 
 }
 
+@media (max-width:900px){
+  html{
+    overflow-x: hidden;
+  }
+}
 
 
 
