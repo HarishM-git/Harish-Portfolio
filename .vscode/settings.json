@@ -3,5 +3,6 @@
   "CodeGPT.Autocomplete.enabled": true,
   "CodeGPT.Autocomplete.provider": "CodeGPT Plus - Plus",
   "CodeGPT.Autocomplete.maxTokens": 1024,
-  "CodeGPT.Autocomplete.suggestionDelay": 2000
+  "CodeGPT.Autocomplete.suggestionDelay": 2000,
+  "liveServer.settings.port": 5501
 }
