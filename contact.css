@@ -33,7 +33,13 @@
   background-color: #1d1d1d;
   width: 28%;
   height: 40%;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(2, 218, 197, 0.5);
   
+}
+.lft-in-ct:hover {
+ 
+  box-shadow: 0 0 30px #02dac5, 0 0 50px rgba(2, 218, 197, 0.5);
 }
 .ct-no{
   padding: 9px;
