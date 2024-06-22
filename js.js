@@ -104,12 +104,24 @@ document.addEventListener('DOMContentLoaded', function() {
     sr.reveal('.service-container', { origin: 'left', distance: '100px', duration: 1000, delay: 400 });
     sr.reveal('.feature-pro-text', { delay: 850, origin: 'right-bottom', distance: '100px', duration: 1000 });
     sr.reveal('.bio-text', { delay: 900, origin: 'left', distance: '200px', duration: 1000 });
-    ScrollReveal().reveal('.contact-text', { delay: 850, origin: 'bottom', distance: '100px' });
+    sr.reveal('.contact-text', { delay: 850, origin: 'bottom', distance: '100px' });
 
     sr.reveal('.service-text', { delay: 700, origin: 'right-bottom', distance: '100px' });
     sr.reveal('.service-container', { origin: 'left', distance: '100px', duration: 1000, delay: 400 });
     sr.reveal('.feature-pro-text', { delay: 850, origin: 'right-bottom', distance: '100px', duration: 1000 });
-
+    sr.reveal('.contact-text', { delay: 850, origin: 'right-bottom', distance: '100px' });
+    sr.reveal('.lft-in-ct', {
+      origin: 'right-bottom',
+      distance: '200px',
+      duration: 1000,
+      delay: 600
+    });
+    sr.reveal('#hire', {
+      origin: 'left',
+      distance: '200px',
+      duration: 1000,
+      delay: 600
+    });
   }
 });
 
