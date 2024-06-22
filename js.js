@@ -56,6 +56,18 @@ document.addEventListener('DOMContentLoaded', function() {
     delay: 600
   });
   ScrollReveal().reveal('.bio-text', { delay: 900, origin: 'left', distance: '200px' });
+  ScrollReveal().reveal('.lft-in-ct', {
+    origin: 'right-bottom',
+    distance: '200px',
+    duration: 1000,
+    delay: 600
+  });
+  ScrollReveal().reveal('#hire', {
+    origin: 'left',
+    distance: '200px',
+    duration: 1000,
+    delay: 600
+  });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
