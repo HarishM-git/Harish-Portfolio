@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
       origin: 'right-bottom',
       distance: '200px',
       duration: 1000,
-      delay: 600
+      delay: 600  
     });
     sr.reveal('#hire', {
       origin: 'left',
