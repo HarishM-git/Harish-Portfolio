@@ -55,11 +55,11 @@ h1.name{
   flex-direction: row;
   
   padding-top: 6px;
-  transform: translateY(50%);
+  
   
   font-size: 15px;
   gap: 86px;
-  margin-top: -25px;
+  
 }
 .middle-section{
   transition: transform 3s ;
@@ -158,16 +158,10 @@ header a.active {
     width: 70%;
  
   }
-  .last-section{
-    display: none;
-  }
+  
   
   .header{
     height: 60px;
   }
-  .logo{
-    opacity: 0;
-  transition: opacity 0.5s ease;
-  justify-content: center;
-  }
+ 
 }

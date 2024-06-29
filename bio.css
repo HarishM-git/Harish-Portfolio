@@ -7,6 +7,7 @@
  
   background-color: #1d1d1d;
   overflow-x: hidden;
+  height: 100vh;
 
 }
 .bio-image-con{
@@ -29,7 +30,7 @@
  
   width: 100%;
   
-  margin-right: 11px    ;
+  margin-right: 11px;
 }
 
 .bio-con{
