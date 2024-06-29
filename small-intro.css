@@ -35,13 +35,38 @@
  
   min-height: 100vh;
   align-content: center;
-  overflow-x: hidden
+  overflow-x: hidden;
+  background-image: url(project-photos/luca-laurence-ZrqrP9Xs2vI-unsplash.jpg);
+  
+   
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width:520px){
   .home-text{
-    min-height: 70vh;
+    min-height: 100vh;
       
   }
   
+}
+@media (max-width:900px){
+  .home-text{
+    background-image: url(project-photos/kelly-sikkema-tk9RQCq5eQo-unsplash.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+}
+
+@media (max-width:827px){
+  .home-text{
+    background-image: url(project-photos/kelly-sikkema-L5HG3CH_pgc-unsplash.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
 }

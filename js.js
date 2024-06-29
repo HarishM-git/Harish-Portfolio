@@ -172,6 +172,8 @@ const services=[{
 services.forEach(element => {
   const divElem = document.createElement('div')
   divElem.className = 'web-developer video-editor'
+  
+
   const serdivElem = document.createElement('div')
   serdivElem.className = 'service-icon'
   const Icon = document.createElement('i')
