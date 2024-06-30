@@ -39,3 +39,8 @@ a{
 html{
   scroll-behavior: smooth ;
 }
+@media only screen and (max-device-width: 480px) {
+  a {
+      pointer-events: none;
+  }
+}

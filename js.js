@@ -235,7 +235,7 @@ const Projects=[{
 Projects.forEach((element)=>{
 
   const anch=document.createElement('a');
-  anch.style="text-decoration:none";
+  anch.style="text-decoration:none ";
   anch.href=element.href;
   const common_mo=document.createElement('div');
   common_mo.className="common-model youtube-con";
