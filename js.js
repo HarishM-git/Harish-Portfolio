@@ -73,13 +73,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
   const isMobile = window.matchMedia('(max-width: 767px)').matches;
-
+  let ans=document.querySelector('.view-resume')
+  
+  
   // Initialize ScrollReveal
   const sr = ScrollReveal();
 
   sr.reveal('.header', { delay: 200, origin: 'top', distance: '100px' });
 
   if (isMobile) {
+    ans.style='font-size:15px'
+    
+
+
     sr.reveal('.home-text', { delay: 350, origin: 'bottom', distance: '50px' });
     sr.reveal('.github-icon', { origin: 'left', distance: '200px', duration: 1000, delay: 200 });
     sr.reveal('.gmail-icon', { origin: 'bottom', distance: '50px', duration: 1000, delay: 400 });
@@ -95,6 +101,8 @@ document.addEventListener('DOMContentLoaded', function() {
     sr.reveal('.lft-in-ct', { origin: 'left', distance: '100px', duration: 1000, delay: 400 });
    
   } else {
+
+    ans.innerHTML='View Resume<i style="color:black; font-size: 20px; text-align:center; padding-left:8px" class="fa-regular fa-file fa-shake"></i>';
     sr.reveal('.home-text', { delay: 350, origin: 'bottom', distance: '100px' });
     sr.reveal('.github-icon', { origin: 'left', distance: '200px', duration: 1000, delay: 200 });
     sr.reveal('.gmail-icon', { origin: 'bottom', distance: '50px', duration: 1000, delay: 400 });
