@@ -229,6 +229,11 @@ const Projects=[{
   img:"project-photos/amazon.png",
   href:"https://harishm-git.github.io/amazon-project/" ,
   content:"This is an Amazon Clone for Html and Css Practice"
+},
+{
+  img:"project-photos/form.png",
+  href:"https://github.com/HarishM-git/SLform" ,
+  content:"This is an Login and Signup form for learning Backend and database"
 }]
 
 
