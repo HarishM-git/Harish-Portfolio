@@ -72,6 +72,12 @@ h1.name{
   margin-top: -6px;
 }
 
+/* header.css */
+
+.active {
+  color: #01d8c3; 
+  font-weight: bold; 
+}
 
 
 @media (max-width: 1040px){
