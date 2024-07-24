@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
         current = section.getAttribute('id');
       }
     });
-
+    
     navLinks.forEach((link) => {
       link.classList.remove('active');
       if (link.getAttribute('href').includes(current)) {
