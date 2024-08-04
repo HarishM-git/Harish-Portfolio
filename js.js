@@ -196,6 +196,7 @@ services.forEach(element => {
   const h4 = document.createElement('h4')
   h4.innerText = element.name
   const h6 = document.createElement('h6')
+  h6.className='text-inside-service'
   h6.innerText = element.content
   serdivElem.append(Icon)
   divElem.append(serdivElem)
