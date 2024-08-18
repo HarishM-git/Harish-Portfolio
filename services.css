@@ -1,78 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
-.service-text{
- 
+.service-text {
   min-height: 50vh;
   background-color: #131313;
   padding-bottom: 40px;
   overflow-x: hidden;
 }
-.center{
+
+.center {
   padding-top: 20px;
   display: block;
   text-align: center;
 }
-.wid{
+
+.wid {
   margin-top: 0%;
   padding-top: 0%;
 }
 
-.service-container{
+.service-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap:125px;
+  gap: 125px;
   flex-wrap: wrap;
-  
-  
 }
 
-
-.web-developer{
-  
-  
+.web-developer {
   border-width: 1px;
   border-color: #01d8c3;
   border-style: solid;
   width: 240px;
   height: 200px;
-  background-color:#262626;
+  background-color: #262626;
   border-radius: 15px;
-  transition: 5s all;
-  /* transition:  border-width 2px 0.6s ease; */
-  cursor: pointer;
-  
-  transition:opacity 0.3 0.6 ease;
   padding-bottom: 21px;
-} 
+  position: relative; /* Required for pseudo-element positioning */
+  overflow: hidden; /* Hide overflow for the pseudo-element */
+  cursor: pointer;
+  transition: box-shadow 0.6s ease-in-out, transform 0.6s ease-in-out, color 0.6s ease;
+}
+
+.web-developer::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* Start from the vertical center */
+  left: 50%; /* Center horizontally */
+  width: 200%; /* Double the width of the parent */
+  height: 200%; /* Double the height of the parent */
+  background-color: #01d8c3;
+  z-index: 0;
+  transform-origin: center;
+  transform: translate(-50%, -50%) rotate(45deg) scale(0); /* Scale initially at 0 */
+  transition: transform 0.6s ease;
+}
+
+.web-developer:hover::before {
+  transform: translate(-50%, -50%) rotate(45deg) scale(1); /* Scale to full size */
+}
+
+.web-developer:hover {
+  box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.5);
+  transform: scale(1.09);
+  color: #131313;
+}
 
 .web-developer:hover .service-icon,
 .web-developer:hover .title-name,
-.web-developer:hover .service-content
-{
-    
-    
-    /* border-width: 10px; */
-    opacity:1;
-    
-    color:#131313
-  
+.web-developer:hover .service-content {
+  opacity: 1;
+  color: #131313;
 }
-.web-developer:hover hr{
-    background-color: #131313;
-    border-color: #131313;
+
+.web-developer:hover hr {
+  background-color: #131313;
+  border-color: #131313;
 }
-.service-icon{
+
+.service-icon {
   margin-top: 35px;
   margin-left: 22px;
-  
+  position: relative;
+  z-index: 1; /* Ensure icons are above the background */
 }
-.title-name{
+
+.title-name {
   color: #d0d0d0;
   margin-left: 22px;
-  
+  position: relative;
+  z-index: 1; /* Ensure text is above the background */
 }
-.service-content{
+
+.service-content {
   margin-left: 22px;
   margin-right: 12px;
   color: #d0d0d0;
@@ -80,23 +99,11 @@
   font-weight: 400;
   font-style: normal;
   font-size: 19px;
+  position: relative;
+  z-index: 1; /* Ensure text is above the background */
 }
 
-.web-developer{
-  
-  transition: box-shadow 3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Transition to a bigger shadow on hover */
-.web-developer:hover {
-   box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.5);
-  transform: scale(1.09) ;
-  background-color: #01d8c3;
-}
-
-hr{
-  
+hr {
   width: 35%;
   height: 0.5%;
   margin-left: 22px;
@@ -105,28 +112,25 @@ hr{
   background-color: white;
 }
 
-.service-content:hover .fa{
-  color: black;
-}
-
-.text-inside-service{
+.text-inside-service {
   font-family: "Abel", sans-serif;
-  font-weight:lighter;
+  font-weight: lighter;
   font-style: normal;
   font-size: 14px;
 }
 
+.service-content:hover .fa {
+  color: black;
+}
 
-
-
-@media (max-width:1040px){
-  .service-container{
+@media (max-width: 1040px) {
+  .service-container {
     gap: 55px;
   }
 }
-@media (max-width:490px){
-  .service-container{
+
+@media (max-width: 490px) {
+  .service-container {
     gap: 35px;
   }
 }
-

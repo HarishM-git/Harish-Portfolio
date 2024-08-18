@@ -376,7 +376,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     button.addEventListener('mouseleave', function() {
       const icon = this.querySelector('i');
-      icon.style.color = 'white'; // Change back to original color
+      icon.style.color = '#ffffff'; // Change back to original color
     });
   });
 });
