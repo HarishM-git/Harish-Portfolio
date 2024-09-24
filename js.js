@@ -235,6 +235,11 @@ const Projects=[{
   img:"project-photos/form.png",
   href:"https://slform.onrender.com" ,
   content:"This is an Login and Signup form for learning Backend and database"
+},
+{
+  img:"project-photos/white-board.png",
+  href:"https://white-board-rho.vercel.app/" ,
+  content:"This is an white board project built in vit chennai within 2 hours"
 }]
 
 
