@@ -1,4 +1,3 @@
-
 //scroll effects
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -133,32 +132,10 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.querySelector('.view-resume').addEventListener('click', function(event) {
+  console.log('Resume button clicked!');
+  //event.preventDefault(); // Prevent default navigation for debugging - removed to allow navigation
+});
 
 
 const services=[{
@@ -391,44 +368,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
