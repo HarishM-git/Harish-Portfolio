@@ -11,8 +11,8 @@ window.onload = () => {
 
   if (loader && homeText) {
     setTimeout(() => {
-      loader.style.display = 'none'; // Hide loader after 2 seconds
-      homeText.style.display = 'block'; // Show home text
+      loader.style.display = 'none';
+      homeText.style.display = 'block';
     }, 2000);
   }
 };
