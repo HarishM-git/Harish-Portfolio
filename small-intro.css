@@ -20,11 +20,11 @@ b {
   font-size: 3rem;
   font-family: 'Roboto', monospace;
   font-weight: 400;
-  color: #00ffa5;
+  color: #01d8c3;
   text-align: center;
-  text-shadow: 0 0 3px #00ffa5, 0 0 10px #00ffa5;
+  text-shadow: 0 0 3px #01d8c3, 0 0 10px #01d8c3;
   display: inline-block;
-  animation: cray 15s infinite steps(50);
+  animation: cray 25s infinite steps(80);
 }
 
 @keyframes cray {
