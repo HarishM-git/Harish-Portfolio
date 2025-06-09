@@ -245,10 +245,15 @@
   </footer>
   <script type='module' src="js.js" defer></script>
   <script>
-    var loader = document.getElementById("home-loader");
-    window.addEventListener("load", function() {
-      loader.style.display = "none";
-    });
+   var loader = document.getElementById("home-loader");
+
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    loader.style.display = "none";
+  }, 3000); 
+});
+    
   </script>
+
 </body>
 </html>
