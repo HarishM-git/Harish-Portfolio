@@ -76,3 +76,11 @@
           box-shadow: .2em -.2em 0 0 currentcolor;
         }
       }
+
+#preloader{
+  background: #000;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}

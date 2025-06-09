@@ -33,8 +33,9 @@
 
 
 </head> 
-<body>
-
+<body >
+  <div id="home-loader" class="loader"></div>
+  <!-- <div id="preloader" class="loader"></div> -->
   <header>
     <div class="header">
 
@@ -54,7 +55,6 @@
     <div style="display: flex; justify-content: center; align-items: center; ">
       
     </div>
-    <div id="home-loader" class="loader"></div>
     <div class="home-text">
     
       <div class="small-intro">
@@ -244,5 +244,11 @@
     <div class="last-text"><b>&#169 2024 </b>&#903 Made with  <i class="fa-solid fa-heart-pulse fa-bounce" style="color: #02dac5;"></i>  by <b>Harish</b> </div>
   </footer>
   <script type='module' src="js.js" defer></script>
+  <script>
+    var loader = document.getElementById("home-loader");
+    window.addEventListener("load", function() {
+      loader.style.display = "none";
+    });
+  </script>
 </body>
 </html>
