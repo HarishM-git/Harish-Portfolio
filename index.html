@@ -33,7 +33,7 @@
 
 
 </head> 
-<body >
+<body class="main-content" >
   <div id="home-loader" class="loader"></div>
   <!-- <div id="preloader" class="loader"></div> -->
   <header>
@@ -245,13 +245,15 @@
   </footer>
   <script type='module' src="js.js" defer></script>
   <script>
-   var loader = document.getElementById("home-loader");
+    var loader = document.getElementById("home-loader");
+    var content = document.getElementById("main-content");
 
-window.addEventListener("load", function () {
-  setTimeout(function () {
-    loader.style.display = "none";
-  }, 2000); 
-});
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        loader.style.display = "none";
+        content.style.display = "block";
+      }, 3000); 
+    });
     
   </script>
 
