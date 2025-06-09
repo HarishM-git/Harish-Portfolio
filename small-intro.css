@@ -411,7 +411,7 @@ b {
 
 @media (max-width: 900px) {
   .home-text {
-    /* background-image: url(project-photos/kelly-sikkema-tk9RQCq5eQo-unsplash.jpg); */
+    background-image: url(https://midnightsimon.com/bg.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -420,7 +420,7 @@ b {
 
 @media (max-width: 827px) {
   .home-text {
-    /* background-image: url(project-photos/kelly-sikkema-L5HG3CH_pgc-unsplash.jpg); */
+    background-image: url(https://midnightsimon.com/bg.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -428,9 +428,9 @@ b {
 }
 
 @media (max-width: 400px) {
-  /* .home-text {
-    background-image: url(project-photos/small-bg.jpg);
-  } */
+  .home-text {
+    background-image: url(https://midnightsimon.com/bg.gif);
+  }
 
   .glitch {
     font-size: 3rem;
