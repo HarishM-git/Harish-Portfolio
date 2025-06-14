@@ -195,7 +195,7 @@ const Projects=[
   href:"",
 },
 {
-  img:"project-photos/MarketApp.png",
+  img:"project-photos/marketApp.png",
   content:"This Project Aims to get the realtime price of Market Products",
   href:"https://github.com/HarishM-git/NewMaketApp",
 },
