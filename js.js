@@ -188,15 +188,16 @@ services.forEach(element => {
 
 
 
-const Projects=[{
-  img:"project-photos/rps-game.png",
-  content:"This is an Rock Paper Scissor Game for JS Practice",
-  href:"https://harishm-git.github.io/rps-game/"
+const Projects=[
+{
+  img:"project-photos/lucas.png",
+  content:"This is an LUCAS TVS Employee training automation Project",
+  href:"",
 },
 {
-  img:"project-photos/tdl.png",
-  content:"This is an To Do List for JS Practice",
-  href:"https://harishm-git.github.io/t-d-list/"
+  img:"project-photos/MarketApp.png",
+  content:"This Project Aims to get the realtime price of Market Products",
+  href:"",
 },
 {
   img:"project-photos/youtube.png",
