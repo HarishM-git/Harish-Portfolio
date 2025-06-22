@@ -388,7 +388,7 @@ b {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
-  background-image: url(https://midnightsimon.com/bg.gif);
+  /* background-image: url(https://midnightsimon.com/bg.gif); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -411,7 +411,7 @@ b {
 
 @media (max-width: 900px) {
   .home-text {
-    background-image: url(https://midnightsimon.com/bg.gif);
+    /* background-image: url(https://midnightsimon.com/bg.gif); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -420,7 +420,7 @@ b {
 
 @media (max-width: 827px) {
   .home-text {
-    background-image: url(https://midnightsimon.com/bg.gif);
+    /* background-image: url(https://midnightsimon.com/bg.gif); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -429,7 +429,7 @@ b {
 
 @media (max-width: 400px) {
   .home-text {
-    background-image: url(https://midnightsimon.com/bg.gif);
+    /* background-image: url(https://midnightsimon.com/bg.gif); */
   }
 
   .glitch {
@@ -448,7 +448,7 @@ b {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
-  background-image: url(project-photos/kelly-sikkema-VX0bsbyBxpM-unsplash.jpg);
+  /* background-image: url(project-photos/kelly-sikkema-VX0bsbyBxpM-unsplash.jpg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
