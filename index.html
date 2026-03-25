@@ -198,6 +198,19 @@
   }
   .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
 
+  #loadMoreProjects {
+    color: var(--text);
+    background: rgba(24, 24, 24, 0.95);
+    border-color: var(--accent);
+    font-weight: 600;
+  }
+
+  #loadMoreProjects:hover {
+    background: var(--accent);
+    color: #080808;
+    border-color: var(--accent);
+  }
+
   /* HERO RIGHT - VISUAL */
   .hero-right {
     position: relative; display: flex; align-items: center; justify-content: center;
@@ -460,6 +473,10 @@
     box-shadow: 0 0 0 2px var(--accent), 0 24px 60px rgba(200,240,74,0.12);
   }
 
+  .scard.collapsed, .sinfo-panel.collapsed {
+    display: none !important;
+  }
+
   .scard-img {
     width: 100%;
     aspect-ratio: 16/9;
@@ -561,7 +578,7 @@
   .about-sub {
     font-family: var(--mono); font-size: 12px; color: var(--muted);
     line-height: 2; margin-bottom: 40px; font-weight: 300;
-  }
+  } 
 
   .stats-row { display: flex; gap: 48px; margin-top: 40px; }
   .stat { }
@@ -822,7 +839,7 @@
       <div class="stack-info-side">
 
         <div class="sinfo-panel active" data-panel="0">
-          <div class="sinfo-num">01 / 09</div>
+          <div class="sinfo-num">01 / 11</div>
           <h3 class="sinfo-title">Lucas TVS —<br><strong>DOJO 2.0</strong></h3>
           <div class="sinfo-tags"><span class="tag">React Native</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Tablet App</span></div>
           <div class="sinfo-blocks">
@@ -832,7 +849,27 @@
         </div>
 
         <div class="sinfo-panel" data-panel="1">
-          <div class="sinfo-num">02 / 09</div>
+          <div class="sinfo-num">02 / 11</div>
+          <h3 class="sinfo-title">AncentriCare —<br><strong>Genetic Compatibility</strong></h3>
+          <div class="sinfo-tags"><span class="tag">Healthcare Tech</span><span class="tag">Hackathon Winner</span><span class="tag">MedTech</span><span class="tag">React</span></div>
+          <div class="sinfo-blocks">
+            <div class="sinfo-block"><div class="sinfo-label">What I Built</div><div class="sinfo-text">An intelligent platform that checks marriage compatibility between families by analyzing genetic factors and detecting blood relations to prevent genetic disorders.</div></div>
+            <div class="sinfo-block"><div class="sinfo-label">Achievement</div><div class="sinfo-text">🏆 Won 2nd Prize at MedTech Hackathon with ₹15,000 prize money. Team: GeneLink — a healthcare innovation tackling genetic compatibility and family wellness.</div></div>
+          </div>
+        </div>
+
+        <div class="sinfo-panel" data-panel="2">
+          <div class="sinfo-num">03 / 11</div>
+          <h3 class="sinfo-title">FabriCare —<br><strong>AI Fabric Laundry System</strong></h3>
+          <div class="sinfo-tags"><span class="tag">AGI</span><span class="tag">React</span><span class="tag">Tailwind CSS</span><span class="tag">AI</span></div>
+          <div class="sinfo-blocks">
+            <div class="sinfo-block"><div class="sinfo-label">What I Built</div><div class="sinfo-text">A laundry automation platform that uses AI fabric recognition to segregate fabric types, avoiding wash congestion and improving lifecycle management.</div></div>
+            <div class="sinfo-block"><div class="sinfo-label">Achievement</div><div class="sinfo-text">Hackathon project implementing AGI systems for smart fabric classification and automated wash routing. Built with React and Tailwind CSS.</div></div>
+          </div>
+        </div>
+
+        <div class="sinfo-panel" data-panel="3">
+          <div class="sinfo-num">04 / 11</div>
           <h3 class="sinfo-title">Real-Time<br><strong>Market Price App</strong></h3>
           <div class="sinfo-tags"><span class="tag">React Native</span><span class="tag">REST API</span><span class="tag">Mobile</span></div>
           <div class="sinfo-blocks">
@@ -841,8 +878,8 @@
           </div>
         </div>
 
-        <div class="sinfo-panel" data-panel="2">
-          <div class="sinfo-num">03 / 09</div>
+        <div class="sinfo-panel" data-panel="4">
+          <div class="sinfo-num">05 / 11</div>
           <h3 class="sinfo-title">PrintA4 —<br><strong>Printing Platform</strong></h3>
           <div class="sinfo-tags"><span class="tag">React</span><span class="tag">UI/UX</span><span class="tag">Landing Page</span></div>
           <div class="sinfo-blocks">
@@ -851,8 +888,18 @@
           </div>
         </div>
 
-        <div class="sinfo-panel" data-panel="3">
-          <div class="sinfo-num">04 / 09</div>
+        <div class="sinfo-panel" data-panel="5">
+          <div class="sinfo-num">06 / 11</div>
+          <h3 class="sinfo-title">Ridemap TV —<br><strong>College Bus Routes TV App</strong></h3>
+          <div class="sinfo-tags"><span class="tag">TV App</span><span class="tag">React</span><span class="tag">Route Planning</span><span class="tag">Expo</span><span class="tag">Sponsorship</span></div>
+          <div class="sinfo-blocks">
+            <div class="sinfo-block"><div class="sinfo-label">What I Built</div><div class="sinfo-text">A TV dashboard for daily college bus routes showing live route details, current bus positions, and sponsor/video content for advertisement revenue.</div></div>
+            <div class="sinfo-block"><div class="sinfo-label">What I Learned</div><div class="sinfo-text">Built a broadcast-friendly UI for TV screens with route scheduling, bus tracking, and ad management for campus infrastructure.</div></div>
+          </div>
+        </div>
+
+        <div class="sinfo-panel" data-panel="6">
+          <div class="sinfo-num">07 / 11</div>
           <h3 class="sinfo-title">ParkWheels —<br><strong>Parking Management</strong></h3>
           <div class="sinfo-tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Automation</span></div>
           <div class="sinfo-blocks">
@@ -861,18 +908,18 @@
           </div>
         </div>
 
-        <div class="sinfo-panel" data-panel="4">
-          <div class="sinfo-num">05 / 09</div>
+        <div class="sinfo-panel" data-panel="7">
+          <div class="sinfo-num">08 / 11</div>
           <h3 class="sinfo-title">WhiteBoard —<br><strong>Canvas App</strong></h3>
-          <div class="sinfo-tags"><span class="tag">HTML Canvas</span><span class="tag">JavaScript</span><span class="tag">LocalStorage</span></div>
+          <div class="sinfo-tags"><span class="tag">HTML Canvas</span><span class="tag">JavaScript</span><span class="tag">LocalStorage</span><span class="tag">Hackathon</span></div>
           <div class="sinfo-blocks">
-            <div class="sinfo-block"><div class="sinfo-label">What I Built</div><div class="sinfo-text">A fully functional browser whiteboard with freehand drawing, adjustable brush, color picker, save/load and PNG export — built in 2 hours at VIT Chennai.</div></div>
-            <div class="sinfo-block"><div class="sinfo-label">What I Learned</div><div class="sinfo-text">Deep-dived into the HTML5 Canvas API and mouse events. Proved that rapid prototyping under pressure is a superpower.</div></div>
+            <div class="sinfo-block"><div class="sinfo-label">What I Built</div><div class="sinfo-text">A fully functional browser whiteboard with freehand drawing, adjustable brush, color picker, save/load and PNG export — built in 2–3 hours at VIT Chennai.</div></div>
+            <div class="sinfo-block"><div class="sinfo-label">Achievement</div><div class="sinfo-text">Won 2nd prize at VIT Chennai hackathon (₹5,000). Built manually without AI help to prove fast, reliable craftsmanship.</div></div>
           </div>
         </div>
 
-        <div class="sinfo-panel" data-panel="5">
-          <div class="sinfo-num">06 / 09</div>
+        <div class="sinfo-panel" data-panel="8">
+          <div class="sinfo-num">09 / 11</div>
           <h3 class="sinfo-title">Firebase —<br><strong>Movie Rating App</strong></h3>
           <div class="sinfo-tags"><span class="tag">Firebase</span><span class="tag">Google Auth</span><span class="tag">Firestore</span></div>
           <div class="sinfo-blocks">
@@ -881,8 +928,8 @@
           </div>
         </div>
 
-        <div class="sinfo-panel" data-panel="6">
-          <div class="sinfo-num">07 / 09</div>
+        <div class="sinfo-panel" data-panel="9">
+          <div class="sinfo-num">10 / 11</div>
           <h3 class="sinfo-title">Auth System —<br><strong>Login & Signup</strong></h3>
           <div class="sinfo-tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">JWT</span></div>
           <div class="sinfo-blocks">
@@ -891,18 +938,8 @@
           </div>
         </div>
 
-        <div class="sinfo-panel" data-panel="7">
-          <div class="sinfo-num">08 / 09</div>
-          <h3 class="sinfo-title">YouTube Clone —<br><strong>HTML & CSS</strong></h3>
-          <div class="sinfo-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Flexbox</span><span class="tag">Grid</span></div>
-          <div class="sinfo-blocks">
-            <div class="sinfo-block"><div class="sinfo-label">What I Built</div><div class="sinfo-text">A pixel-accurate YouTube homepage — sidebar, search, video thumbnail grid, channel info, views and timestamps — all in pure HTML/CSS.</div></div>
-            <div class="sinfo-block"><div class="sinfo-label">What I Learned</div><div class="sinfo-text">Sharpened CSS Grid and Flexbox by reverse-engineering one of the world's most complex UIs. Layout mastery through imitation.</div></div>
-          </div>
-        </div>
-
-        <div class="sinfo-panel" data-panel="8">
-          <div class="sinfo-num">09 / 09</div>
+        <div class="sinfo-panel" data-panel="10">
+          <div class="sinfo-num">11 / 11</div>
           <h3 class="sinfo-title">Amazon Clone —<br><strong>HTML & CSS</strong></h3>
           <div class="sinfo-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive</span></div>
           <div class="sinfo-blocks">
@@ -926,74 +963,92 @@
         </div>
 
         <div class="scard" data-idx="1">
-          <div class="scard-img"><img src="project-photos/marketApp2.jpg" alt="Market App"/></div>
+          <div class="scard-img"><img src="project-photos/GeneLink.png" alt="AncentriCare"/></div>
           <div class="scard-shine"></div>
           <div class="scard-bar">
-            <span class="scard-name">Real-Time Market Price App</span>
+            <span class="scard-name">AncentriCare · Genetic Compatibility</span>
             <span class="scard-idx">02</span>
           </div>
         </div>
 
         <div class="scard" data-idx="2">
-          <div class="scard-img"><img src="project-photos/printa4.png" alt="PrintA4"/></div>
+          <div class="scard-img"><img src="project-photos/FabriCare.png" alt="FabriCare"/></div>
           <div class="scard-shine"></div>
           <div class="scard-bar">
-            <span class="scard-name">PrintA4 · Printing Platform</span>
+            <span class="scard-name">FabriCare · AI Fabric Laundry System</span>
             <span class="scard-idx">03</span>
           </div>
         </div>
 
         <div class="scard" data-idx="3">
-          <div class="scard-img"><img src="project-photos/parkWheels.png" alt="ParkWheels"/></div>
+          <div class="scard-img"><img src="project-photos/marketApp2.jpg" alt="Market App"/></div>
           <div class="scard-shine"></div>
           <div class="scard-bar">
-            <span class="scard-name">ParkWheels · Parking Management</span>
+            <span class="scard-name">Real-Time Market Price App</span>
             <span class="scard-idx">04</span>
           </div>
         </div>
 
         <div class="scard" data-idx="4">
-          <div class="scard-img"><img src="project-photos/white-board.png" alt="WhiteBoard"/></div>
+          <div class="scard-img"><img src="project-photos/printa4.png" alt="PrintA4"/></div>
           <div class="scard-shine"></div>
           <div class="scard-bar">
-            <span class="scard-name">WhiteBoard · Canvas App</span>
+            <span class="scard-name">PrintA4 · Printing Platform</span>
             <span class="scard-idx">05</span>
           </div>
         </div>
 
         <div class="scard" data-idx="5">
-          <div class="scard-img"><img src="project-photos/firebase.png" alt="Firebase App"/></div>
+          <div class="scard-img"><img src="project-photos/RidemapTV.png" alt="Ridemap TV"/></div>
           <div class="scard-shine"></div>
           <div class="scard-bar">
-            <span class="scard-name">Firebase · Movie Rating App</span>
+            <span class="scard-name">Ridemap TV · College Bus Route Dashboard</span>
             <span class="scard-idx">06</span>
           </div>
         </div>
 
         <div class="scard" data-idx="6">
-          <div class="scard-img"><img src="project-photos/form.png" alt="Auth System"/></div>
+          <div class="scard-img"><img src="project-photos/parkWheels.png" alt="ParkWheels"/></div>
           <div class="scard-shine"></div>
           <div class="scard-bar">
-            <span class="scard-name">Auth System · Login & Signup</span>
+            <span class="scard-name">ParkWheels · Parking Management</span>
             <span class="scard-idx">07</span>
           </div>
         </div>
 
         <div class="scard" data-idx="7">
-          <div class="scard-img"><img src="project-photos/youtube.png" alt="YouTube Clone"/></div>
+          <div class="scard-img"><img src="project-photos/white-board.png" alt="WhiteBoard"/></div>
           <div class="scard-shine"></div>
           <div class="scard-bar">
-            <span class="scard-name">YouTube Clone · HTML & CSS</span>
+            <span class="scard-name">WhiteBoard · Canvas App</span>
             <span class="scard-idx">08</span>
           </div>
         </div>
 
         <div class="scard" data-idx="8">
+          <div class="scard-img"><img src="project-photos/firebase.png" alt="Firebase App"/></div>
+          <div class="scard-shine"></div>
+          <div class="scard-bar">
+            <span class="scard-name">Firebase · Movie Rating App</span>
+            <span class="scard-idx">09</span>
+          </div>
+        </div>
+
+        <div class="scard" data-idx="9">
+          <div class="scard-img"><img src="project-photos/form.png" alt="Auth System"/></div>
+          <div class="scard-shine"></div>
+          <div class="scard-bar">
+            <span class="scard-name">Auth System · Login & Signup</span>
+            <span class="scard-idx">10</span>
+          </div>
+        </div>
+
+        <div class="scard" data-idx="10">
           <div class="scard-img"><img src="project-photos/amazon.png" alt="Amazon Clone"/></div>
           <div class="scard-shine"></div>
           <div class="scard-bar">
             <span class="scard-name">Amazon Clone · HTML & CSS</span>
-            <span class="scard-idx">09</span>
+            <span class="scard-idx">11</span>
           </div>
         </div>
 
@@ -1011,6 +1066,12 @@
       <span class="sdot" data-dot="6"></span>
       <span class="sdot" data-dot="7"></span>
       <span class="sdot" data-dot="8"></span>
+      <span class="sdot" data-dot="9"></span>
+      <span class="sdot" data-dot="10"></span>
+    </div>
+
+    <div class="load-more-wrapper" style="display:flex; justify-content:center; padding: 40px 0;">
+      <button id="loadMoreProjects" class="btn-secondary" style="padding:12px 28px; font-size:13px;">Load More Projects</button>
     </div>
   </div>
 </section>
@@ -1114,10 +1175,12 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2024 <span class="footer-accent">Harish Mohan</span> · All rights reserved</p>
+  <p>© <span id="current_year"></span> <span class="footer-accent">Harish Mohan</span> · All rights reserved</p>
   <p>Designed & built with <span class="footer-accent">♥</span> in Pondicherry</p>
-</footer><script>
+</footer>
+<script>
   // Custom cursor
+  document.getElementById('current_year').textContent = new Date().getFullYear();
   const cursor = document.getElementById('cursor');
   const follower = document.getElementById('follower');
   let mx = 0, my = 0, fx = 0, fy = 0;
@@ -1233,6 +1296,24 @@
       follower.style.borderColor = 'rgba(200,240,74,0.4)';
     });
   });
+
+  // Project load more toggle
+  const loadMoreBtn = document.getElementById('loadMoreProjects');
+  if (loadMoreBtn) {
+    const panels = Array.from(document.querySelectorAll('.stack-info-side .sinfo-panel'));
+    const cards = Array.from(document.querySelectorAll('.stack-cards-side .scard'));
+    const hiddenPanels = panels.slice(5);
+    const hiddenCards = cards.slice(5);
+
+    hiddenPanels.forEach(panel => panel.classList.add('collapsed'));
+    hiddenCards.forEach(card => card.classList.add('collapsed'));
+
+    loadMoreBtn.addEventListener('click', () => {
+      hiddenPanels.forEach(panel => panel.classList.remove('collapsed'));
+      hiddenCards.forEach(card => card.classList.remove('collapsed'));
+      loadMoreBtn.style.display = 'none';
+    });
+  }
 </script>
 
 <script>
